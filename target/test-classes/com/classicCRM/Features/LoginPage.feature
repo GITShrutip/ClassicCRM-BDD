@@ -8,8 +8,7 @@ Feature: Login to CRM
     Given I am on Classic CRM Page
     And I have verified its title 
     #Free CRM  - CRM software for customer relationship management, sales, and support.
-    When I enter valid Email ID
-    And valid password
+    When I enter valid Email ID and Password
     And click on login button
     Then I logged into crm 
     #CRMPRO title
@@ -20,8 +19,7 @@ Feature: Login to CRM
   @NegativeTest
   Scenario Outline: Checking login function working or not
     Given I am on Classic CRM Page
-    When I enter  <username> in username
-    And I enter <passowrd> in password field
+    When I enter  <username> in username and password <password>
     And click on login button 
     Then I should not redirect to any page
 
