@@ -9,6 +9,8 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import io.cucumber.java.After;
+
 public class ClassicCRMBase {
 	
 	protected WebDriver driver;
@@ -16,15 +18,16 @@ public class ClassicCRMBase {
 	
 	
 	
-	public WebDriver launch() {
-		
+	public WebDriver getDriver() throws FileNotFoundException, IOException {
+		prop=initializeProperty();
 		if(prop.getProperty("browser").equals("chrome")) {
 			driver=new ChromeDriver();
-			
-			driver.get(prop.getProperty("url"));
-			
-		}
+			}
 		return driver;
+	}
+	
+	public void gotoURL(WebDriver driver) {
+		driver.get(prop.getProperty("url"));	
 	}
 	
 	public Properties initializeProperty() throws FileNotFoundException, IOException {
@@ -34,9 +37,6 @@ public class ClassicCRMBase {
 		return prop;
 	}
 	
-	public void quitdriver() {
-		driver.quit();
-	}
 	
 	
 

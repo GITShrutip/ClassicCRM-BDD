@@ -34,9 +34,9 @@ public class LoginPage {
 		password.sendKeys(pwd);
 	}
 	
-	public CRMHomePage clickOnLogin() {
+	public void clickOnLogin() {
 		login_btn.click();
-		return new CRMHomePage(driver);
+		
 	}
 	
 	

@@ -12,7 +12,7 @@ public class CRMHomePage {
 	WebDriver driver;
 	WebDriverWait wait;
 	
-	CRMHomePage(WebDriver driver){
+	public CRMHomePage(WebDriver driver){
 		this.driver=driver;
 	}
 	
