@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-24T15:41:25 IST" name="Default suite" finished-at="2023-05-24T15:42:10 IST" duration-ms="45485">
+  <suite started-at="2023-05-24T19:16:35 IST" name="Default suite" finished-at="2023-05-24T19:18:54 IST" duration-ms="139444">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-05-24T15:41:25 IST" name="Default test" finished-at="2023-05-24T15:42:10 IST" duration-ms="45485">
+    <test started-at="2023-05-24T19:16:35 IST" name="Default test" finished-at="2023-05-24T19:18:54 IST" duration-ms="139444">
       <class name="com.classicCRM.TestRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-24T15:41:25 IST" name="setUpClass" finished-at="2023-05-24T15:41:26 IST" duration-ms="900" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-24T19:16:35 IST" name="setUpClass" finished-at="2023-05-24T19:16:39 IST" duration-ms="4279" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@c1a4620]]>
+                <![CDATA[org.testng.TestRunner@2237bada]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-24T15:41:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-24T15:42:10 IST" duration-ms="44451" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-24T19:16:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-24T19:18:19 IST" duration-ms="99502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Checking login function working or not"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to CRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-24T19:16:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-24T19:18:54 IST" duration-ms="134932" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +53,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-24T15:42:10 IST" name="tearDownClass" finished-at="2023-05-24T15:42:10 IST" duration-ms="46" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-24T19:16:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-24T19:18:26 IST" duration-ms="107010" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["I want to login to classic CRM application with Valid credentials."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to CRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-24T19:16:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-24T19:18:18 IST" duration-ms="99463" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Checking login function working or not"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to CRM"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-24T19:18:54 IST" name="tearDownClass" finished-at="2023-05-24T19:18:54 IST" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
