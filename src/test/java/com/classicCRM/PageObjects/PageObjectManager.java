@@ -1,5 +1,7 @@
 package com.classicCRM.PageObjects;
 
+import java.awt.Menu;
+
 import org.openqa.selenium.WebDriver;
 
 public class PageObjectManager {
@@ -7,6 +9,8 @@ public class PageObjectManager {
 	WebDriver driver;
 	LoginPage loginPage;
 	CRMHomePage homePage;
+	CRMMenuBar menuBar;
+	NewCompanyPage newCompanyPage;
 
 	public PageObjectManager(WebDriver driver) {
 		this.driver = driver;
@@ -22,6 +26,17 @@ public class PageObjectManager {
 
 		homePage = homePage == null ? new CRMHomePage(driver) : homePage;
 		return homePage;
+	}
+	
+	public CRMMenuBar getMenuBar() {
+	
+		menuBar=menuBar==null? new CRMMenuBar(driver) : menuBar;
+		return menuBar;
+	}
+	
+	public NewCompanyPage getNewCompanyPage() {
+		newCompanyPage= newCompanyPage==null? new NewCompanyPage(driver) : newCompanyPage;
+		return newCompanyPage;
 	}
 
 }

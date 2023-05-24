@@ -1,9 +1,14 @@
-D:\SeleniumWorkspace\ClassicCRMBDD\src\test\java\com\classicCRM\PageObjects\CRMHomePage.java
 D:\SeleniumWorkspace\ClassicCRMBDD\src\test\java\com\classicCRM\PageObjects\LoginPage.java
 D:\SeleniumWorkspace\ClassicCRMBDD\src\test\java\com\classicCRM\utils\Container.java
-D:\SeleniumWorkspace\ClassicCRMBDD\src\test\java\com\classicCRM\utils\ClassicCRMBase.java
 D:\SeleniumWorkspace\ClassicCRMBDD\src\test\java\com\classicCRM\TestRunner\TestRunner.java
 D:\SeleniumWorkspace\ClassicCRMBDD\src\test\java\com\classicCRM\StepDef\HomePageStepDefination.java
+D:\SeleniumWorkspace\ClassicCRMBDD\src\test\java\com\classicCRM\StepDef\MenuNavigationStepDef.java
+D:\SeleniumWorkspace\ClassicCRMBDD\src\test\java\com\classicCRM\PageObjects\CRMHomePage.java
+D:\SeleniumWorkspace\ClassicCRMBDD\src\test\java\com\classicCRM\utils\ExcelUtilities.java
+D:\SeleniumWorkspace\ClassicCRMBDD\src\test\java\com\classicCRM\StepDef\CompanyStepDef.java
+D:\SeleniumWorkspace\ClassicCRMBDD\src\test\java\com\classicCRM\PageObjects\NewCompanyPage.java
+D:\SeleniumWorkspace\ClassicCRMBDD\src\test\java\com\classicCRM\utils\ClassicCRMBase.java
 D:\SeleniumWorkspace\ClassicCRMBDD\src\test\java\com\classicCRM\PageObjects\PageObjectManager.java
+D:\SeleniumWorkspace\ClassicCRMBDD\src\test\java\com\classicCRM\PageObjects\CRMMenuBar.java
 D:\SeleniumWorkspace\ClassicCRMBDD\src\test\java\com\classicCRM\StepDef\LoginTest.java
 D:\SeleniumWorkspace\ClassicCRMBDD\src\test\java\com\classicCRM\StepDef\CucumberHooks.java

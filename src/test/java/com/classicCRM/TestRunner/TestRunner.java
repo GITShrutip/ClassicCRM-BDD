@@ -10,9 +10,10 @@ import io.cucumber.testng.CucumberOptions;
 		glue="/com/classicCRM/StepDef",
 		
 		monochrome=true,
-		tags="@LoginTest",
+		tags="@CompanyTest",
 		
 		plugin="html:reports/classicCRMReport.html"
+		
 		
 		)
 
