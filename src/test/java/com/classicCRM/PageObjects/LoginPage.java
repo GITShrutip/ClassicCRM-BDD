@@ -1,5 +1,6 @@
 package com.classicCRM.PageObjects;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,7 +36,10 @@ public class LoginPage {
 	}
 	
 	public void clickOnLogin() {
-		login_btn.click();
+		
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click()", login_btn);
+		
 		
 	}
 	

@@ -25,5 +25,5 @@ Feature: Login to CRM
 
     Examples: 
       | username  | password | 
-      | name1 		|     pass1| 
+      | name1 		|    pass1 | 
       | name2			|    pass2 | 

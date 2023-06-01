@@ -11,6 +11,7 @@ public class PageObjectManager {
 	CRMHomePage homePage;
 	CRMMenuBar menuBar;
 	NewCompanyPage newCompanyPage;
+	CompanyHomePage companyHomePage;
 
 	public PageObjectManager(WebDriver driver) {
 		this.driver = driver;
@@ -37,6 +38,11 @@ public class PageObjectManager {
 	public NewCompanyPage getNewCompanyPage() {
 		newCompanyPage= newCompanyPage==null? new NewCompanyPage(driver) : newCompanyPage;
 		return newCompanyPage;
+	}
+	
+	public CompanyHomePage getCompanyHomePage() {
+		companyHomePage = companyHomePage==null ? new CompanyHomePage(driver):companyHomePage;
+		return companyHomePage;
 	}
 
 }

@@ -1,5 +1,6 @@
 package com.classicCRM.StepDef;
 
+import java.sql.Driver;
 import java.util.Properties;
 
 import com.classicCRM.PageObjects.CRMMenuBar;
@@ -35,5 +36,13 @@ public class MenuNavigationStepDef {
 	
 }
 
+	@Given("Navigate to Company Filter Section")
+	public void navigate_to_filter() {
+		//verify i am on filter page and advance filter is displayed
+		login_to_crm_page();
+		contextClass.driver.switchTo().frame("mainpanel");
+	    contextClass.pageObjectManager.getMenuBar().navigateToSearchCompany();
+	}
+	
 }
 

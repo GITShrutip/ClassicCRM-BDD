@@ -45,6 +45,9 @@ public class CRMMenuBar {
 		driver.findElement(newCompany).click();	
 	}
 	
+	public void navigateToSearchCompany() {
+		driver.findElement(companiesMainMenu).click();
+	}
 	
 	
 

@@ -1,0 +1,5 @@
+#DEfault value for parameters if not received at run time.
+
+#Browser to be run on local or on grid is given here
+RunOn=Local
+
