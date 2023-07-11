@@ -10,8 +10,10 @@ pipeline {
     stages {
     	stage('Checkout code from SCM - github jenins file')
     	{
-    		echo 'checking out code from SCM -gitHub'
-    		//code
+    		step{
+	    		echo 'checking out code from SCM -gitHub'
+	    		//code
+    		}
     	}
      	
         stage('Get source code from git repo') {
