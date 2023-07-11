@@ -22,6 +22,7 @@ pipeline {
                 git 'https://github.com/GITShrutip/ClassicCRM-BDD.git'
            
             }
+            }
         stage('Cleaning stage'){
             steps{
                 bat 'mvn clean'
@@ -33,7 +34,7 @@ pipeline {
             }
         }
        
-
+	}
             post {
                 // If Maven was able to run the tests, even if some of the test
                 // failed, record the test results and archive the jar file.
@@ -42,6 +43,6 @@ pipeline {
                     archiveArtifacts 'target/*.jar'
                 }
             }
-        }
+        
     }
 }
