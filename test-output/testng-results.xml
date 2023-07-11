@@ -1,139 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-31T23:27:46 IST" name="Default suite" finished-at="2023-05-31T23:34:57 IST" duration-ms="430986">
+  <suite started-at="2023-06-28T23:29:12 IST" name="Default suite" finished-at="2023-06-28T23:29:27 IST" duration-ms="14804">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@5afa3c9]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-05-31T23:27:46 IST" name="Default test" finished-at="2023-05-31T23:34:57 IST" duration-ms="430986">
+    <test started-at="2023-06-28T23:29:12 IST" name="Default test" finished-at="2023-06-28T23:29:27 IST" duration-ms="14804">
       <class name="com.classicCRM.TestRunner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-31T23:27:46 IST" name="setUpClass" finished-at="2023-05-31T23:27:47 IST" duration-ms="1069" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@5afa3c9]" started-at="2023-06-28T23:29:12 IST" name="setUpClass" finished-at="2023-06-28T23:29:13 IST" duration-ms="1044" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7b1c501d]]>
+                <![CDATA[org.testng.TestRunner@60297f36]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-31T23:27:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-31T23:29:13 IST" duration-ms="86187" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@5afa3c9]" started-at="2023-06-28T23:29:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-28T23:29:27 IST" duration-ms="13597" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Add new Record for Company"]]>
+                <![CDATA["Navigate to contect Page"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["As a User I want to configure company details into system and use them in other sections"]]>
+                <![CDATA["As a user I need to add contact in the system"]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.149)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [880bf873bce9ac73d1ff15000310487d, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Shruti\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56283/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 880bf873bce9ac73d1ff15000310487d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.149)
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 8', os.arch: 'amd64', os.version: '6.2', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [880bf873bce9ac73d1ff15000310487d, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Shruti\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56283/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 880bf873bce9ac73d1ff15000310487d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+at com.classicCRM.PageObjects.LoginPage.enterLoginDetails(LoginPage.java:35)
+at com.classicCRM.StepDef.MenuNavigationStepDef.login_to_crm_page(MenuNavigationStepDef.java:28)
+at ✽.Login to CRM Page(file:///D:/SeleniumWorkspace/ClassicCRMBDD/src/test/java/com/classicCRM/Features/Contact.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-31T23:29:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-31T23:29:57 IST" duration-ms="43627" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Filter on Company Page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["As a User I want to configure company details into system and use them in other sections"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-31T23:29:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-31T23:31:07 IST" duration-ms="70039" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Filter on Company Page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["As a User I want to configure company details into system and use them in other sections"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-31T23:31:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-31T23:33:35 IST" duration-ms="148235" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Filter on Company Page"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["As a User I want to configure company details into system and use them in other sections"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-31T23:33:35 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-31T23:34:09 IST" duration-ms="33335" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["I want to login to classic CRM application with Valid credentials."]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login to CRM"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-31T23:34:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-31T23:34:36 IST" duration-ms="26934" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Checking login function working or not"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login to CRM"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-31T23:34:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-05-31T23:34:57 IST" duration-ms="21217" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Checking login function working or not"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login to CRM"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.classicCRM.TestRunner.TestRunner@7161d8d1]" started-at="2023-05-31T23:34:57 IST" name="tearDownClass" finished-at="2023-05-31T23:34:57 IST" duration-ms="221" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.classicCRM.TestRunner.TestRunner@5afa3c9]" started-at="2023-06-28T23:29:27 IST" name="tearDownClass" finished-at="2023-06-28T23:29:27 IST" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

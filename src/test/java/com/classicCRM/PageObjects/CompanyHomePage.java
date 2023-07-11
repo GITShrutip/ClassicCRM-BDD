@@ -44,14 +44,13 @@ public class CompanyHomePage {
 	@FindBy(xpath = "//*[@id='btn_cs_search']/parent::td")
 	WebElement advanceSearchTab;
 	// btn_cs_search
-	
-	@FindBy(css="#vCompaniesForm  tr:nth-Child(5)") //#vCompaniesForm  tr:nth-child(5)
+
+	@FindBy(css = "#vCompaniesForm  tr:nth-Child(5)") // #vCompaniesForm tr:nth-child(5)
 	WebElement tableContent;
-	
-	////*[@id="vCompaniesForm"]//td[2]/a[@context='company']
-	@FindBy(xpath="//*[@id='vCompaniesForm']//td[2]/a[@context='company']")
+
+	//// *[@id="vCompaniesForm"]//td[2]/a[@context='company']
+	@FindBy(xpath = "//*[@id='vCompaniesForm']//td[2]/a[@context='company']")
 	List<WebElement> getCompanyNames;
-	
 
 	// implement methods
 
@@ -72,10 +71,10 @@ public class CompanyHomePage {
 		return true;
 	}
 
-	//function to check whether advance search tab is displayed
+	// function to check whether advance search tab is displayed
 	public boolean verifyForAdvanceSearchTab() {
 		boolean flag = false;
-		System.out.println(advanceSearchTab.getText()+"This is text");
+		System.out.println(advanceSearchTab.getText() + "This is text");
 		if (advanceSearchTab.isDisplayed()) {
 			flag = advanceSearchTab.getText().trim().contains("Advanced");
 			return flag;
@@ -85,19 +84,17 @@ public class CompanyHomePage {
 	}
 
 	public boolean checkifSearchResultDisplayed() {
-		
+
 		return tableContent.isDisplayed();
-		
-		
+
 	}
-	
-	
+
 	public boolean isDataPresentInResultTable(String cName) {
-		System.out.println(getCompanyNames.stream().anyMatch(x->x.getText().contains(cName)) + cName);
-		getCompanyNames.forEach(x->x.getText());
-		
-		return (getCompanyNames.stream().anyMatch(x->x.getText().contains(cName.trim())));
-		
+		System.out.println(getCompanyNames.stream().anyMatch(x -> x.getText().contains(cName)) + cName);
+		getCompanyNames.forEach(x -> x.getText());
+
+		return (getCompanyNames.stream().anyMatch(x -> x.getText().contains(cName.trim())));
+
 	}
 
 }

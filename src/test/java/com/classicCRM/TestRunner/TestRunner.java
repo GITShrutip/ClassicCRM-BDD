@@ -10,10 +10,13 @@ import io.cucumber.testng.CucumberOptions;
 		glue="/com/classicCRM/StepDef",
 		
 		monochrome=true,
-		tags="@LoginTest or @CompanyTest",
+		tags="@ContactPage ",
 		
-		plugin="html:reports/classicCRMReport.html"
+		plugin={"html:reports/classicCRMReport.html"
+			//	"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" //for extent reporting
+		}
 		//dryRun=true
+		
 		
 		)
 

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 31 23:27:46 IST 2023</td>
+<td>Started on:</td><td>Wed Jun 28 23:29:12 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>430 seconds (430986 ms)</td>
+<tr><td>Total time:</td><td>14 seconds (14804 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,40 +76,73 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.classicCRM.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.classicCRM.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Filter on Company Page", "As a User I want to configure company details into system and use them in other sections"</td>
-<td></td>
-<td>70</td>
-<td>com.classicCRM.TestRunner.TestRunner@7161d8d1</td></tr>
-<tr>
-<td title='com.classicCRM.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.classicCRM.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "I want to login to classic CRM application with Valid credentials.", "Login to CRM"</td>
-<td></td>
-<td>33</td>
-<td>com.classicCRM.TestRunner.TestRunner@7161d8d1</td></tr>
-<tr>
-<td title='com.classicCRM.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.classicCRM.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Checking login function working or not", "Login to CRM"</td>
-<td></td>
-<td>21</td>
-<td>com.classicCRM.TestRunner.TestRunner@7161d8d1</td></tr>
-<tr>
-<td title='com.classicCRM.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.classicCRM.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Filter on Company Page", "As a User I want to configure company details into system and use them in other sections"</td>
-<td></td>
-<td>148</td>
-<td>com.classicCRM.TestRunner.TestRunner@7161d8d1</td></tr>
-<tr>
-<td title='com.classicCRM.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.classicCRM.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Checking login function working or not", "Login to CRM"</td>
-<td></td>
-<td>26</td>
-<td>com.classicCRM.TestRunner.TestRunner@7161d8d1</td></tr>
-<tr>
-<td title='com.classicCRM.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.classicCRM.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Filter on Company Page", "As a User I want to configure company details into system and use them in other sections"</td>
-<td></td>
-<td>43</td>
-<td>com.classicCRM.TestRunner.TestRunner@7161d8d1</td></tr>
-<tr>
-<td title='com.classicCRM.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.classicCRM.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add new Record for Company", "As a User I want to configure company details into system and use them in other sections"</td>
-<td></td>
-<td>86</td>
-<td>com.classicCRM.TestRunner.TestRunner@7161d8d1</td></tr>
+<td title='com.classicCRM.TestRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.classicCRM.TestRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Navigate to contect Page", "As a user I need to add contact in the system"</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.149)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [880bf873bce9ac73d1ff15000310487d, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Shruti\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56283/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 880bf873bce9ac73d1ff15000310487d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+	at com.classicCRM.PageObjects.LoginPage.enterLoginDetails(LoginPage.java:35)
+	at com.classicCRM.StepDef.MenuNavigationStepDef.login_to_crm_page(MenuNavigationStepDef.java:28)
+	at ✽.Login to CRM Page(file:///D:/SeleniumWorkspace/ClassicCRMBDD/src/test/java/com/classicCRM/Features/Contact.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace665417748", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace665417748'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=109.0.5414.149)
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 8&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.2&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [880bf873bce9ac73d1ff15000310487d, findElement {using=name, value=username}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Shruti\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:56283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56283/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 880bf873bce9ac73d1ff15000310487d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.sendKeys(Unknown Source)
+	at com.classicCRM.PageObjects.LoginPage.enterLoginDetails(LoginPage.java:35)
+	at com.classicCRM.StepDef.MenuNavigationStepDef.login_to_crm_page(MenuNavigationStepDef.java:28)
+	at ✽.Login to CRM Page(file:///D:/SeleniumWorkspace/ClassicCRMBDD/src/test/java/com/classicCRM/Features/Contact.feature:7)
+</pre></div></td>
+<td>13</td>
+<td>com.classicCRM.TestRunner.TestRunner@5afa3c9</td></tr>
 </table><p>
 </body>
 </html>

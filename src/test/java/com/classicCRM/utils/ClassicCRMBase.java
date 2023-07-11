@@ -6,23 +6,31 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
 
 import io.cucumber.java.After;
 
 public class ClassicCRMBase {
 	
-	protected WebDriver driver;
+	protected  WebDriver driver;
 	protected Properties prop;
+	
+	//for reporting 
 	
 	
 	
 	public WebDriver getDriver() throws FileNotFoundException, IOException {
+		
 		prop=initializeProperty();
 		if(prop.getProperty("browser").equals("chrome")) {
 			driver=new ChromeDriver();
 			}
+		
 		return driver;
 	}
 	
@@ -37,7 +45,12 @@ public class ClassicCRMBase {
 		return prop;
 	}
 	
-	
+	public   void getScreenshot(String name) throws IOException {
+		//path D:\SeleniumWorkspace\ClassicCRMBDD\Screenshots
+		File file= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(file, new File(System.getProperty("user.dir")+"\\screenshots\\"+name+".jpg"));
+		System.out.println("screenshot taken");
+	}
 	
 
 }

@@ -25,7 +25,6 @@ public class Container {
 		pageObjectManager=new PageObjectManager(driver);
 	}
 	
-
-	
+		
 
 }
