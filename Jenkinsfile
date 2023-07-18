@@ -12,6 +12,7 @@ pipeline {
     	{
     		steps{
 	    		echo 'checking out code from SCM -gitHub'
+			echo 'new Code is added here.'
 	    		//code
     		}
     	}
