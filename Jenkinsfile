@@ -20,7 +20,7 @@ pipeline {
         stage('Get source code from git repo') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/GITShrutip/ClassicCRM-BDD.git'
+               git branch: 'main', url: 'https://github.com/GITShrutip/ClassicCRM-BDD.git'
            
             }
             }
@@ -40,8 +40,7 @@ pipeline {
                 // If Maven was able to run the tests, even if some of the test
                 // failed, record the test results and archive the jar file.
                 success {
-                    junit '**/target/surefire-reports/TEST-*.xml'
-                    archiveArtifacts 'target/*.jar'
+                    echo 'Build successfull'
                 }
             }
         
