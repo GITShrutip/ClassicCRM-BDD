@@ -3,7 +3,7 @@ Feature: As a user I need to add contact in the system
   I want to use this template for my feature file
 
   @ContactPageNavigation
-  Scenario: Navigate to contect Page
+  Scenario: Navigate to contact Page
     Given Login to CRM Page
     And check contact option is available in menu bar
     When I click on add new contact option

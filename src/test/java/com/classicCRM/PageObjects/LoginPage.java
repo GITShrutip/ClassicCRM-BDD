@@ -39,7 +39,7 @@ public class LoginPage {
 	public void clickOnLogin() {
 		
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click()", login_btn);
+		js.executeScript("arguments[0].click()", login_btn);//imp
 		
 		
 	}

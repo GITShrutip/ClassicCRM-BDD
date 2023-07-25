@@ -1,4 +1,3 @@
-
 @CompanyTest
 Feature: As a User I want to configure company details into system and use them in other sections 
 					like creating new contact and new Deal #only verifying on page that company is visible is handled in seperate scenarios
@@ -23,7 +22,7 @@ Feature: As a User I want to configure company details into system and use them 
   | status | Category | Name           | CompanyNameOnResult |
   | Active | Client   | Company1       | Company1            |
   | Active | Client   | newCompanyIDE  | newCompanyIDE       |
-  | Active |     Client     |        CRMAppCompany1        | CRMAppCompany1      |
+  | Active | Client   | CRMAppCompany1 | CRMAppCompany1      |
   
    
 

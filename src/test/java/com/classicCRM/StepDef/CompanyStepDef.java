@@ -2,6 +2,8 @@ package com.classicCRM.StepDef;
 
 import java.io.IOException;
 
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 
 import com.classicCRM.PageObjects.NewCompanyPage;

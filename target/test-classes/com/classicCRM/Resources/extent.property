@@ -1,10 +1,10 @@
 extent.reporter.spark.start=true
 extent.reporter.spark.out=automation-report.html
 screenshot.dir=test-output/
-screenshot.rel.path=../
+screenshot.rel.path=../screenshot/
 basefolder.name=reports/SparkReport
 basefolder.datetimepattern=d-MMM-YY HH-mm-ss
 extent.reporter.spark.vieworder=dashboard,test,exception,author,device,log
-systeminfo.user={ShrutiP}
-systeminfo.build={1.0.0}
-systeminfo.AppName={Automation for Classic Free CRM}
+systeminfo.user=sruti
+systeminfo.build=1.1
+systeminfo.AppName=CRM

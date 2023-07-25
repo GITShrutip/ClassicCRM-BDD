@@ -6,8 +6,8 @@
       <class name="com.classicCRM.TestRunner.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="tearDownClass"/>
           <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.classicCRM.TestRunner.TestRunner -->
     </classes>

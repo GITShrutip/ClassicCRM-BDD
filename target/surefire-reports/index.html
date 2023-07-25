@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,7 +21,8 @@
      -->
   </head>
 
-  <body>    <div class="top-banner-root">
+  <body>
+    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
@@ -103,7 +104,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.classicCRM.TestRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Navigate to contect Page&quot;, &quot;As a user I need to add contact in the system&quot;)">runScenario("Navigate to contect Page", "As a user I need to add contact in the system")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.classicCRM.TestRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Navigate to contact Page&quot;, &quot;Optional[As a user I need to add contact in the system]&quot;)">runScenario("Navigate to contact Page", "Optional[As a user I need to add contact in the system]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -126,10 +127,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Navigate to contect Page&quot;, &quot;As a user I need to add contact in the system&quot;)">
-                  </a> <!-- runScenario("Navigate to contect Page", "As a user I need to add contact in the system") -->
+                  <a name="runScenario(&quot;Navigate to contact Page&quot;, &quot;Optional[As a user I need to add contact in the system]&quot;)">
+                  </a> <!-- runScenario("Navigate to contact Page", "Optional[As a user I need to add contact in the system]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Navigate to contect Page","As a user I need to add contact in the system")</span>
+                  <span class="parameters">("Navigate to contact Page", "Optional[As a user I need to add contact in the system]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -145,7 +146,7 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; data-provider-thread-count=&quot;2&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;2&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.classicCRM.TestRunner.TestRunner&quot;/&gt;
@@ -200,7 +201,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'com.classicCRM.TestRunner.TestRunner')
-data.setCell(0, 3, 39351);
+data.setCell(0, 3, 39071);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -233,16 +234,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.classicCRM.TestRunner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@33aa93c)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@50fe837a)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Navigate to contect Page", "As a user I need to add contact in the system")</span>
-                <span class="method-start">1177 ms</span>
+                <span class="method-name">runScenario("Navigate to contact Page", "Optional[As a user I need to add contact in the system]")</span>
+                <span class="method-start">923 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">40540 ms</span>
+                <span class="method-start">39999 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
